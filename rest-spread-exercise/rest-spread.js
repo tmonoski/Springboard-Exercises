@@ -7,9 +7,7 @@
 
 // Refactor it to use the rest operator & an arrow function:
 
-const filterOutOdds = (...nums) => {
-  return nums.filter((num) => num % 2 === 0);
-};
+const filterOutOdds = (...nums) => nums.filter((num) => num % 2 === 0);
 
 // Write a function called findMin that accepts a variable number of arguments and returns the smallest argument.
 
@@ -53,11 +51,15 @@ const extend = (array1, array2) => [...array1, ...array2];
 /** Return a new object with all the keys and values
 from obj and a new key/value pair */
 
-const addKeyVal = (obj, key, val) => ({ ...obj, key: val });
+const addKeyVal = (obj, key, val) => ({ ...obj, [key]: val });
 
 /** Return a new object with a key removed. */
 
-const removeKey = (obj, key) => Object.keys(...obj).filter().reduce() return obj
+const removeKey = (obj, key) => {
+  const newObj = { ...obj };
+  delete newObj[key];
+  return newObj;
+};
 
 /** Combine two objects and return a new object. */
 
@@ -65,6 +67,4 @@ const combine = (obj1, obj2) => ({ ...obj1, ...obj2 });
 
 /** Return a new object with a modified key and value. */
 
-const update = (obj, key, val) => ({...obj, key
-
-}
+const update = (obj, key, val) => ({ ...obj, [key]: val });
