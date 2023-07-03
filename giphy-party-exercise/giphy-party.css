@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(71, 66, 66);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 80px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 0.3px goldenrod;
+  margin-bottom: 0;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 3px;
+  -webkit-text-stroke: 0.1px goldenrod;
+  margin-top: 0;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  color: rgb(167, 165, 165);
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 50px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  min-width: 250px;
+  font-size: 15px;
+  margin-right: 12px;
+  background-color: #eeede2;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: rgb(224, 189, 98);
+  border-style: inset;
+  margin-right: 12px;
+  border-radius: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-color: rgb(219, 179, 77);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  transition: 0.2s all;
+}
+
+button:hover {
+  background-color: rgb(173, 145, 75);
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.9);
+  box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
